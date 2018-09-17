@@ -93,6 +93,19 @@ public class Ex3MatrixMethods {
     // -------- Write methods below this -----------------------
 
 
+   int[][] toMatrix(int[] arr) {
+        int[][] nMatrice = new int[3][3];
+        int i = 0;
+
+        for (i = 0; i < arr.length; i++){
+            int u = i % 3;
+            int r = i % 3;
+            nMatrice[r][u] = arr[i];
+            out.println(nMatrice[r][u]);
+
+        }
+        return nMatrice;
+    }
 
     // Use if you like (during development)
     void plot(int[][] matrix) {
